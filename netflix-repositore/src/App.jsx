@@ -8,9 +8,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/movie/:id" element={<MovieDetails />} />
+        <Route path="netflix-repositore/" element={<Login />} />
+        <Route path="netflix-repositore/home" element={<Home />} />
+        <Route path="netflix-repositore/movie/:id" element={<MovieDetails />} />
       </Routes>
     </Router>
   );

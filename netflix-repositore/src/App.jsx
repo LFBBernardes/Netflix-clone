@@ -6,13 +6,14 @@ import MovieDetails from './pages/MovieDetails';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/movie/:id" element={<MovieDetails />} />
-      </Routes>
-    </Router>
+    <Router basename="/netflix-repositore">
+  <Routes>
+    <Route path="/" element={<Login />} />
+    <Route path="/home" element={<Home />} />
+    <Route path="/movie/:id" element={<MovieDetails />} />
+  </Routes>
+</Router>
+
   );
 }
 

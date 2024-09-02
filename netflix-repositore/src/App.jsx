@@ -6,7 +6,7 @@ import MovieDetails from './pages/MovieDetails';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
